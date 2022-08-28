@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  {% load static %} 
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>iPortfolio room</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="{% static 'assets/css/style4.css' %}" rel="stylesheet">
+</head>
+  <body>
+    <div class="messages" id="chatlog">
+      <ul id="chat-log">
+        <li class="sent">
+					<img src="http://emilcarlsson.se/assets/mikeross.png" alt="" />
+					<p>How the hell am I supposed to get a jury to believe you when I am not even sure that I do?!</p>
+				</li>
+				<li class="replies">
+					<img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
+					<p>When you're backed against the wall, break the god damn thing down.</p>
+				</li>
+
+      </ul>
+
+    </div>
+      <textarea id="chat-log" cols="100" rows="20"></textarea><br>
+      <input id="chat-message-input" type="text" size="100"><br>
+      <input id="chat-message-submit" type="button" value="send">
+      {{room_name|json_script:"room-name"}}
+      <script>
+          
+          const roomname=JSON.parse(document.getElementById('room-name').textContent); 
+          console.log(window.location.pathname) 
+
+          
+          const chatscoket=new WebSocket(
+              'ws://'
+              +window.location.host
+              +window.location.pathname
+          );
+          
+          const messageinputdom = document.querySelector('#chat-message-input')
+          const message = messageinputdom.value;
+          chatscoket.onmessage =function(e){
+            const data=JSON.parse(e.data)
+            var ul=document.getElementById("chat-log");
+            var li = document.createElement("li");
+            li.appendChild(document.createTextNode(data['message']));
+            li.setAttribute("class", "sent");
+            ul.appendChild(li);
+           
+            
+            document.querySelector('#chat-log').value += (data['message'] + '\n');
+          }
+          chatscoket.onopen = function(e){
+            
+            
+           
+            console.log("open",e);
+          }
+          chatscoket.onerror = function(e){
+            console.error('chat-scoket closed unexpectedly');
+          }
+          document.querySelector('#chat-message-input').focus();
+          document.querySelector('#chat-message-input').onkeyup = function(e){
+            if(e.keyCode === 13){
+              document.querySelector('#chat-message-submit').click();
+            }
+          };
+          document.querySelector('#chat-message-submit').onclick = function(e){
+            
+            const messageinputdom = document.querySelector('#chat-message-input')
+            const message = messageinputdom.value;
+            chatscoket.send(JSON.stringify({
+              'message':message
+            })
+              
+              
+            );
+            
+            
+            messageinputdom.value = '';
+          };
+
+
+          chatscoket.onclose = function(e){
+            
+            console.log("close", e)
+          }
+      </script>
+  </body>
+</html>

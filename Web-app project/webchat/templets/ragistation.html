@@ -1,0 +1,185 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up </title>
+    <link href="{% static 'assets/img/favicon.png'%}" rel="icon">
+    <link href="{% static 'assets/img/apple-touch-icon.png'%}" rel="apple-touch-icon">
+  
+    <!-- Google Fonts -->
+    <link href="{% static 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i' % }" rel="stylesheet">
+  
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'assets/vendor/aos/aos.css'%}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css'%}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+  
+    <!-- Template Main CSS File -->
+    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+   
+
+    
+</head>
+    <body>
+      {% block javascript %}
+      <script >
+        alert("{{message}}")
+      </script>
+      {% endblock %}
+        <div class="main">
+            <div class="container">
+                <div class="signup-content">
+                   
+                   
+                    <div class="signup-form">
+                        <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+                            <div class="hero-container" data-aos="fade-in">
+                              <h1>iPortfolio Provides</h1>
+                              <p>Services like <span class="typed" data-typed-items="Referrals,Chatting,Meetings,Public Postings"></span></p>
+                            </div></section>
+                          <section><div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+                            <section id="about" class="about">
+                                <div class="container">
+                          
+                                  <div class="section-title">
+                                    <h2>Ragister on iPortfolio</h2>
+                                  </div></div></section>
+                            <form action='' method="post" class="register-form" id="register-form" enctype="multipart/form-data">
+                              {% csrf_token %}
+                               
+                                
+                              <div class="row">
+                                <div class="form-group col-md-6">
+                                  <label for="name">Your Userame</label>
+                                  <input type="text" name="name" class="form-control" id="name" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <label for="name">Your FirstName</label>
+                                  <input type="text" name="Firstname" class="form-control" id="Firstname" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <label for="name">Your Lastname</label>
+                                  <input type="text" name="Lastname" class="form-control" id="Lastname" required>
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                  <label for="name">Your Email</label>
+                                  <input type="email" class="form-control" name="email" id="email" required>
+                                </div>
+                              </div>
+                              <div class="row">
+                              <div class="form-group col-md-6">
+                                <label for="name">Address :</label>
+                                <input type="text" name="address" id="address" required/>
+                              </div>
+                            </div>
+                                
+                              
+                              <div class="row">
+                              <div class="form-group col-md-6 ">
+                                <div class="form-radio">
+                                    <label for="gender" class="radio-label">Gender :</label>
+                                    <div class="form-radio-item">
+                                        <input type="radio" name="gender" id="male" checked>
+                                        <label for="male">Male</label>
+                                        <span class="check"></span>
+                                    </div>
+                                    <div class="form-radio-item">
+                                        <input type="radio" name="gender" id="female">
+                                        <label for="female">Female</label>
+                                        <span class="check"></span>
+                                    </div>
+                                </div>
+                               
+                              </div>
+                            </div>
+
+                                <div class="row">
+                                   <div class="form-group col-md-6">
+                                    <label for="state">Country :</label>
+                                    <input type="text" name="state" id="state" placeholder="Enter your Country" required/>
+                                </div>
+                                   <div>
+                                    <div class="form-group col-md-6">
+                                     <label for="city">state :</label>
+                                     <input type="text" name="city" id="city" placeholder="Enter your state" required/>
+                                    </div></div>
+                                </div>
+                            <div class="row">
+                              <div class="form-group col-md-6">
+                                {{form.as_p}}
+                                <label for="image">Image :</label>
+                                    <input type="file" name="image" id="image" />
+                                  </div></div>
+                                  <div class="row">
+                                    <div class="form-group col-md-6">
+                                      <label for="image">Resume :</label>
+                                          <input type="file" name="Resume" id="image" />
+                                        </div>
+                                      </div>
+                            <div class="row">
+                            <div class="form-group col-md-6">
+                                <label for="birth_date">DOB :</label>
+                                <input type="date" name="birth_date" id="birth_date" required/>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="pincode">Pincode :</label>
+                                <input type="text" name="pincode" id="pincode" required/>
+                            </div>
+                        </div>
+                        <div class="row">
+                          <div class="form-group col-md-6">
+                            <label for="password">PASSWORD :</label>
+                            <input type="password" name="password" id="password" required/>
+                          </div>
+                        </div>
+                        <div class="form-submit">
+                            <input type="submit" value="Reset All" class="submit" name="reset" id="reset" />
+                            <input type="submit" value="Submit Form" class="submit" name="submit" id="submit" />
+                        </div>
+                             
+                              
+                            </form>
+                        </div>
+                    </section>
+                       
+                            
+                            
+                                
+                              
+                            
+  
+                                        
+                                
+                                       
+                           
+                                
+                            
+                            
+                       
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+        <script src="{% static 'assets/vendor/aos/aos.js'%}"></script>
+        <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+        <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js'%}"></script>
+        <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js'%}"></script>
+        <script src="{% static 'assets/vendor/php-email-form/validate.js'%}"></script>
+        <script src="{% static 'assets/vendor/purecounter/purecounter.js'%}"></script>
+        <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js'%}"></script>
+        <script src="{% static 'assets/vendor/typed.js/typed.min.js'%}"></script>
+        <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js'%}"></script>
+      
+        <!-- Template Main JS File -->
+        <script src="{% static 'assets/js/main.js'%}"></script>
+        
+    </body>
+    </html>  

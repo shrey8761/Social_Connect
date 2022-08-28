@@ -1,0 +1,331 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>iPortfolio  </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <script src='//production-assets.codepen.io/assets/editor/live/console_runner-079c09a0e3b9ff743e39ee2d5637b9216b3545af0de366d4b9aad9dc87e26bfd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/events_runner-73716630c22bbc8cff4bd0f07b135f00a0bdc5d14629260c3ec49e5606f98fdd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/css_live_reload_init-2c0dc5167d60a5af3ee189d570b1835129687ea2a61bee3513dee3a50c115a77.js'></script><meta charset='UTF-8'><meta name="robots" content="noindex"><link rel="shortcut icon" type="image/x-icon" href="//production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" /><link rel="mask-icon" type="" href="//production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" /><link rel="canonical" href="https://codepen.io/emilcarlsson/pen/ZOQZaV?limit=all&page=74&q=contact+" />
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,300' rel='stylesheet' type='text/css'>
+<link href="{% static 'assets/css/style4.css' %}" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<script src="https://use.typekit.net/hoy3lrg.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'><link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css'>
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png'%}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png'%}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="{% static 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i' % }" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/aos/aos.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+  <script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script><script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+
+  
+</head>
+<body>
+
+    <!-- ======= Mobile nav toggle button ======= -->
+    
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+    
+  
+  
+    <!-- ======= Header ======= -->
+    <header id="header">
+      <div class="d-flex flex-column">
+        <div class="profile">
+            <img src="{% static 'assets/img/profile-img.jpg' %}" alt="" class="img-fluid rounded-circle">
+            <h1 class="text-light"><a href="{% static 'index.html' %}">iPortfolio</a></h1>
+            <div class="social-links mt-3 text-center">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              
+            </div>
+          </div>
+          <nav id="navbar" class="nav-menu navbar">
+            <ul>
+              <li><a href="#home" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+              <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+              <li><a href="#facts" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Facts</span></a></li>
+              
+              <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+              {% if user.is_authanticated %}
+              <li><a href="ragistration" ><i class="bx bx-file-blank"></i> <span>GetStarted</span></a></li>
+              {% else %}
+              <li><a href="ragistration" ><i class="bx bx-file-blank"></i> <span>GetStarted</span></a></li>
+              <li><a href="login" ><i class="bi bi-power"></i> <span>Login</span></a></li>
+              {% endif %}
+            </ul>
+          </nav><!-- .nav-menu -->
+        </div>
+      </header><!-- End Header -->
+      <main id="main">
+      <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+        <div class="hero-container" data-aos="fade-in">
+          <h1>iPortfolio Provides</h1>
+          <p>Services like <span class="typed" data-typed-items="Referrals,Chatting,Meetings,Public Postings"></span></p>
+        </div>
+      </section><!-- End Hero --> 
+      <section id="about" class="about">
+        <div class="container">
+  
+          <div class="section-title">
+            <h2>About</h2>
+            <p>iPortfolio is developed by Shrey.This is a grat place for people getting contact with industry leaders,politicians,and organizes Meetings for 6-7 people who suffering from depression.
+                this platform also provides you a better solution through meetings ,and Group chats.
+            </p>
+          </div>
+          </div>
+          
+      </section>
+      {% for ps in pst %}
+      <div class="container-fluid">
+        
+      <div class="row">
+        
+        <div class="col-md-2">
+          {% if ps.img.url is not None %}
+          <img src="{{ps.img.url}}" alt="" class="img-fluid rounded-circle">
+          {% endif %}
+        </div>
+        
+        
+        <div class="col-md-10" >
+          <div class="row">
+            
+            <a><strong>happy</strong> People feeling relax.</a>
+            
+            
+            <label style="color: grey;">@{{ps.usname}}</label>
+
+          </div>
+          
+        
+          <p >{{ps.posts|linebreaks}}</p>
+          
+          <div class="row">
+            <div class="col-md-3">
+            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+              <div class="count-box">
+                <div class="col-md-6">
+                <i class="bi bi-chat" style="color: grey;"></i></div>
+                <div class="col-md-6">
+                <span style="color: grey;" data-purecounter-start="0" data-purecounter-end={{ps.plis.Replies}} data-purecounter-duration="1" class="purecounter"></span>
+              </div>
+                
+              </div>
+            </div>
+            </div>
+            <div class="col-md-3">
+              <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+                <div class="count-box">
+                  <div class="col-md-6">
+                    <i class="fa fa-retweet" style="color: grey;"></i></div>
+                    <div class="col-md-6">
+                    <span style="color: grey;" data-purecounter-start="0" data-purecounter-end={{ps.plis.retweet}} data-purecounter-duration="1" class="purecounter"></span>
+                  </div>
+                  </div>
+              </div>
+  
+          </div>
+          <div class="col-md-3">
+            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+              <div class="count-box">
+                
+                <div class="col-md-6">
+                  <i class="bi bi-heart" style="color: grey;"></i></div>
+                  <div class="col-md-6">
+                  <span style="color: grey;" data-purecounter-start="0" data-purecounter-end={{ps.plis.Likes}} data-purecounter-duration="1" class="purecounter"></span>
+                </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-3">
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+            <div class="count-box">
+              <div class="col-md-6">
+                <i class="bi bi-share" style="color: grey;"></i></div>
+                
+                
+              
+              </div>
+          </div>
+
+      </div>
+        
+        
+      </div>
+   
+    </div>
+      </div></div><br>{% endfor %}
+      
+
+      
+     
+
+      <section id="facts" class="facts">
+        <div class="container">
+  
+          <div class="section-title">
+            <h2>Facts</h2>
+            <p>Many people are agree with the services provided by iPortfolio.They felt good they got better solution of their problem.
+                Today Depression is a great Problem and it can only solved by sharing problems and many people are feel better after the meetings oeganizes by iportfolio.
+            </p>
+          </div>
+  
+          <div class="row no-gutters">
+  
+            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+              <div class="count-box">
+                <i class="bi bi-emoji-smile"></i>
+                <span data-purecounter-start="0" data-purecounter-end={{upd.happyc}} data-purecounter-duration="1" class="purecounter"></span>
+                <p><strong>Happy People</strong> People feeling relax.</p>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="count-box">
+                <i class="bi bi-journal-richtext"></i>
+                <span data-purecounter-start="0" data-purecounter-end={{upd.Solutions}} data-purecounter-duration="1" class="purecounter"></span>
+                <p><strong>Solutions</strong> Solutions provided to people by industry leaders</p>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
+              <div class="count-box">
+                <i class="bi bi-headset"></i>
+                <span data-purecounter-start="0" data-purecounter-end={{upd.hos}} data-purecounter-duration="1" class="purecounter"></span>
+                <p><strong>Hours Of Support</strong> People getting Support and cares by iportfolio</p>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
+              <div class="count-box">
+                <i class="bi bi-people"></i>
+                <span data-purecounter-start="0" data-purecounter-end={{upd.team}} data-purecounter-duration="1" class="purecounter"></span>
+                <p><strong>Hard Workers</strong> Our teams doing hard work to provide solutions to their problems facing in their life.</p>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section>
+      <section id="services" class="services">
+        <div class="container">
+  
+          <div class="section-title">
+            <h2>Services</h2>
+            <p>iportfolio provides different services free of cost together.It has all the functions provided by different social media apps like fb, telegram ,linkedin,and meetings.</p>
+          </div>
+  
+          <div class="row">
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+              <div class="icon"><i class="bi bi-briefcase"></i></div>
+              <h4 class="title"><a href="">Resumes</a></h4>
+              <p class="description">Its optional.If people wnat to referral from industry leader they get it.You can also upload your Resume.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bi bi-card-checklist"></i></div>
+              <h4 class="title"><a href="">Chatting</a></h4>
+              <p class="description">This website provides you chatting option.You can chat in a room, or group chat or you privately message to any people.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="bi bi-bar-chart"></i></div>
+              <h4 class="title"><a href="">Meetings</a></h4>
+              <p class="description">Here are regular meetings organizeb by our teams and different industry leaders and in any of them you can take part in it.Also you can host your private meetings with peoples.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><i class="bi bi-binoculars"></i></div>
+              <h4 class="title"><a href="">Make friends over the internet</a></h4>
+              <p class="description">You can stock your crush , make friends and make contact with your industry leaders.And Get your Solutions for your problems facing in the life.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon"><i class="bi bi-brightness-high"></i></div>
+              <h4 class="title"><a href="">Enlightment in your dark part of life</a></h4>
+              <p class="description">If you have any darkness in your life in any side , We helps you to remove that darkness in many ways.You can get advices from the experienced people.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+              <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+              <h4 class="title"><a href="">Public Postings</a></h4>
+              <p class="description">This platform also helps you to post your thoughts publicaly,and grow your voice in the world.This heps you to present your problem in the world and the world helps you.</p>
+            </div>
+          </div>
+  
+        </div>
+      </section>
+     
+    
+
+        <!-- ======= About Section ======= -->
+       
+    </main>
+            <footer id="footer">
+                <div class="container">
+                  <div class="copyright">
+                    &copy; Copyright <strong><span>iPortfolio</span></strong>
+                  </div>
+                  <div class="credits">
+                    <!-- All the links in the footer should remain intact. -->
+                    <!-- You can delete the links only if you purchased the pro version. -->
+                    <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+                    Designed by <a href="{% static 'https://bootstrapmade.com/'%}">Shrey</a>
+                  </div>
+                </div>
+              </footer>
+              
+              
+              
+            
+            
+            <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class=" bi-arrow-up-short"></i></a>
+          
+            <!-- Vendor JS Files -->
+            <script src="{% static 'assets/vendor/aos/aos.js'%}"></script>
+            <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+            <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js'%}"></script>
+            <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js'%}"></script>
+            <script src="{% static 'assets/vendor/php-email-form/validate.js'%}"></script>
+            <script src="{% static 'assets/vendor/purecounter/purecounter.js'%}"></script>
+            <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js'%}"></script>
+            <script src="{% static 'assets/vendor/typed.js/typed.min.js'%}"></script>
+            <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js'%}"></script>
+          
+            <!-- Template Main JS File -->
+            <script src="{% static 'assets/js/main.js'%}"></script>
+          
+          </body>
+          
+          </html>
