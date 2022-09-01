@@ -101,10 +101,10 @@ CHANNEL_LAYERS = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'iPortfolio',
-        'USER' : 'postgres',
-        'PORT' : '5433' ,
-        'PASSWORD': '1234',
+        'NAME': 'postgres',
+        'USER' : 'shrey', #postgres
+        'PORT' : '5432' ,
+        'PASSWORD': 'password',
         'HOST' :'localhost'
     }
 }

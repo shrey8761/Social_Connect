@@ -12,6 +12,7 @@ class update (models.Model):
     team = models.IntegerField()
 
 class userprofile (models.Model):
+    id = models.AutoField(primary_key=True)
     username = models.CharField(max_length=100,null=False)
     firstname=  models.CharField(max_length=100,null=False)
     Lastname=  models.CharField(max_length=100,null=False)

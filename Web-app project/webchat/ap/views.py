@@ -33,7 +33,7 @@ def action(request):
         usr=userprofile.objects.filter(username__icontains=nam)
         po=request.POST['userna']
         pso=userprofile.objects.filter(username=po)
-        pro=pso.first
+        pro=pso.first()
         
         
         if usr is not None:
