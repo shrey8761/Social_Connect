@@ -1,0 +1,19 @@
+everythong TDenv
+makemigrations
+runserver
+django used < 4
+
+
+psql server 
+5432
+\ragistar
+
+database name also postgres
+
+
+\d (show sdatabases)
+\dt (tables)
+pgadmin4
+master password = password
+
+/Users/shrey/opt/anaconda3/envs/TDenv/bin/python "/Users/shrey/Downloads/projects/Social_Connect/Web-app project/webchat/manage.py" runserver
