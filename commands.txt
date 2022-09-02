@@ -1,19 +1,32 @@
+Social_Connect
+
 everythong TDenv
 makemigrations
+DONT FORGET TO TURN ON POSTGRES.APP SERVER AT 5432
 runserver
 django used < 4
+
+LOGINS - 
+REMOVE index
+safari - new@new.com 
+my_username agrawalshrey
+
+/Users/shrey/Downloads/projects/Social_Connect/Web-app project/webchat/webchat/settings.py 
+        database name also postgres
 
 
 psql server 
 5432
-\ragistar
+http://127.0.0.1:8000/ragistration
 
-database name also postgres
+
 
 
 \d (show sdatabases)
 \dt (tables)
 pgadmin4
 master password = password
+
+http://127.0.0.1:8000/
 
 /Users/shrey/opt/anaconda3/envs/TDenv/bin/python "/Users/shrey/Downloads/projects/Social_Connect/Web-app project/webchat/manage.py" runserver
